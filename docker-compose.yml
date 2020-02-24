@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+
+  python:
+    build:
+      context: ./detection
+      dockerfile: Dockerfile
+    environment: 
+      - PYTHONUNBUFFERED=1    
+    ports:
+      - "5000:5000"
+    restart: always
+    # command: gunicorn -w 4 privnote.wsgi -v 0.0.0.0:8000
+    command: flask run --host=0.0.0.0
