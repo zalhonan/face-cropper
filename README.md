@@ -1,4 +1,6 @@
-![alt text](https://github.com/zalhonan/face-cropper/blob/master/scheme1.png)
+![Scheme](https://github.com/zalhonan/face-cropper/blob/master/scheme1.png)
+
+Диаграмма создана на [Lucidchart](https://www.lucidchart.com/)
 
 ### Face Cropper
 
