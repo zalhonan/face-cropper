@@ -1,4 +1,4 @@
-![alt text](https://github.com/zalhonan/face-cropper/blob/master/_Face%20Detector.png)
+![alt text](https://github.com/zalhonan/face-cropper/blob/master/scheme1.png)
 
 ### Face Cropper
 
@@ -8,3 +8,5 @@
 
 - Install Docker & docker-compose
 - `docker-compose up`
+
+sendfile-tester.py - посылка файлов на порт 5000
