@@ -1,4 +1,4 @@
-![Scheme](https://github.com/zalhonan/face-cropper/blob/master/scheme2.png)
+![Scheme](https://github.com/zalhonan/face-cropper/blob/master/scheme3.png)
 
 Диаграмма создана на [Lucidchart](https://www.lucidchart.com/)
 
