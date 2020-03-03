@@ -9,7 +9,7 @@
           <v-file-input v-model="file" label="Select Image File..."></v-file-input>
         </v-form>
         <div class="text--primary">{{ newString }}</div>
-        <div class="text--primary">{{ 'responce from server: ' + reversedString }}</div>
+        <div class="text--primary">{{ 'responce from server: ' + responceArr }}</div>
       </v-card-text>
       <v-card-actions>
         <v-btn color="success" @click="onUpload">Upload</v-btn>
@@ -26,7 +26,7 @@ export default {
   data: () => ({
     showPassword: false,
     newString: "",
-    reversedString: "responce will be here",
+    responceArr: "responce will be here",
     counter: 0,
     file: null,
     imageUrl: null
@@ -46,7 +46,7 @@ export default {
         })
         .then(response => {
           console.log(response.data);
-          this.reversedString = response.data;
+          this.responceArr = response.data;
         })
         .catch(error => {
           console.log(error);
