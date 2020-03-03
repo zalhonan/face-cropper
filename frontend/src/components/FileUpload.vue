@@ -9,12 +9,20 @@
           <v-file-input v-model="file" label="Select Image File..."></v-file-input>
         </v-form>
         <div class="text--primary">{{ newString }}</div>
-        <div class="text--primary">{{ 'responce from server: ' + responceArr }}</div>
+        <!-- <div class="text--primary">{{ 'responce from server: ' + responceArr }}</div> -->
       </v-card-text>
       <v-card-actions>
         <v-btn color="success" @click="onUpload">Upload</v-btn>
       </v-card-actions>
     </v-card>
+
+    <v-container fluid>
+      <v-row justify="space-around">
+        <v-col cols="5" v-for="pic in responceArr" :key="pic">
+          <v-img :src="pic"></v-img>
+        </v-col>
+      </v-row>
+    </v-container>
   </v-app>
 </template>
 
@@ -26,7 +34,7 @@ export default {
   data: () => ({
     showPassword: false,
     newString: "",
-    responceArr: "responce will be here",
+    responceArr: null,
     counter: 0,
     file: null,
     imageUrl: null
