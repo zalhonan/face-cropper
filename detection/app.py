@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def root():
-    return 'Move alond, nothing to see here'
+    return 'Move along, nothing to see here'
 
 # получаем картинку, возвращаем масив [[x, y, w, h], [x, y, w, h]]
 @app.route('/detection', methods=['GET', 'POST'])
@@ -28,7 +28,7 @@ def detection():
     if len(res) != 0:
         res = res.tolist()
     else:
-        res = []
+        res = [[]]
 
     # build a response dict to send back to client
     response = {'squares': res}
